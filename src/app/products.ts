@@ -7,6 +7,10 @@ export interface Product {
   availableQuantity: number;
 }
 
+export interface CartProduct extends Product {
+  quantity: number;
+}
+
 export const products: Product[] = [
   { id: 1, description: "Mouse gamer", price: 439.00, priceDescription: "À vista no PIX", image: "/assets/mouse-3.jpg", availableQuantity: 10 },
   { id: 2, description: "Monitor muito bom", price: 1200.50, priceDescription: "À vista no PIX", image: "/assets/monitor-1.jpg", availableQuantity: 10 },

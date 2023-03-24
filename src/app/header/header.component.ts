@@ -1,3 +1,4 @@
+import { CartService } from './../cart.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,4 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  constructor(public cartService: CartService) {}
 }
